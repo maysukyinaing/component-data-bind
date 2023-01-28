@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'component-data-bind';
+  notificationsCount = 10;
+
+  updateNotificationCount(count:number) {
+    this.notificationsCount = count;
+  }
+
 }
